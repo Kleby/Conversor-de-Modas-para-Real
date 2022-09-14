@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+
+  <link rel="stylesheet" href="./src/css/style.css" />
+
+</head>
+<body>
+  <div class="container">
+
+    <header class="items">
+      <h1>Conversor de moeda</h1>
+    </header>
+    <div class=" items selecOptionCoins">
+      <label>Selecione para qual moeda converter</label>
+      <select id="coins_select">
+        <option value="">-- Selecione a moeda --</option>
+      </select>
+      <div class="items div_icons">
+        <span id="icons"></span>
+      </div>
+    </div>
+
+
+    <div class="items input">
+      <label >Quantidade</label>
+      <input type="number" id="input_value" placeholder="Valor" min="0">
+      <button id="btn_convert">Converter</button>
+    </div>
+    
+    <div class="items result"></div>
+</div>
+
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
